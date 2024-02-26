@@ -36,6 +36,9 @@ My role on the team was the front-end person. As a result, I did all of the fron
 
 <b>Note</b>: This is using my API Key so it could cause issues with running from your machine. Please supply your own if you have one. For now, I will keep mine in code but will eventually phase it out.
 
+### Demo
+![Demo](/docs/SRHD%20Food%20Establishment%20Inspection%20Dashboard%20Demo.gif)
+
 ### Issues
 #### Parsing the PDF
 This took around four hours of the twelve to parse the PDF's data into a usable format within Python. This involved a lot due to how a PDF is formatted and all the extra text that was in the footer of each page. This caused issues that persisted to the end. However, most of the data was successfully converted.

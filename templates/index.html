@@ -1,30 +1,35 @@
 <html>
-  <head>
+<head>
     <title>Spokane Regional Health District Food Violation Tracker</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
     <script src="{{ url_for('static', filename='index.js') }}"></script>
     <script>getJson()</script>
-  </head>
-  <body>
-    <div class="container">
+</head>
+<body>
+<div class="container">
     <div id="side-bar">
         <div id="search-form">
-          <label class="form"for="bar">Search</label>
-          <input class="form" onkeyup=searchLocations() onkeydown=searchLocations() onchange=searchLocations() placeholder="Type your Field" id="search-field" name="bar"type="text">
-          <button class="form" onclick=searchLocations() id="enter-button" name="enter">Search</button>
+            <label class="form" for="search-field">Search</label>
+            <input class="form" onkeyup=searchLocations() onkeydown=searchLocations() onchange=searchLocations()
+                   placeholder="Type your Field" id="search-field" name="bar" type="text">
+            <button class="form" onclick=searchLocations() id="enter-button" name="enter">Search</button>
         </div>
-        <div id="loc-details">
-          <h1 class="loc-name"></h1>
-          <h2 class="loc-address"></h2>
+        <div id="loc-container">
+            <div id="loc-header">
+                <h1 class="loc-name"></h1>
+                <h2 class="loc-address"></h2>
+                <h2 class="loc-inspection-num"></h2>
+            </div>
+            <div id="loc-details"></div>
         </div>
     </div>
     <div id="map"></div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM2aIF6rrgDjkOZHmGyt41Bnhueg-Fspk&callback=initMap&v=weekly"
-      defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM2aIF6rrgDjkOZHmGyt41Bnhueg-Fspk&callback=initMap&v=weekly"
+            defer
     ></script>
-  </div>
-  </body>
+</div>
+</body>
 </html

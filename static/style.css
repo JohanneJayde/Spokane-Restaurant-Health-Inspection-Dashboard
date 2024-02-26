@@ -1,60 +1,56 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-*{
-  font-style: "Ubuntu",  "sans-serif";
+body {
+    font-family: "Ubuntu", "sans-serif";
+    font-size: 14px;
 }
 
- #side-bar{
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 40%;
-  background-color: #93E9BE;
-  overflow-y: auto;
- }
+#side-bar {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-color: #93E9BE;
+    overflow-y: auto;
+}
 
- #loc-details{
-  margin: 2em;
- }
+#loc-container {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
- #map {
+#map {
     position: absolute;
     right: 0;
     height: 100%;
     width: 60%;
     margin: auto;
-  }
-  
-  /* 
-   * Optional: Makes the sample page fill the window. 
-   */
-  html,
-  body {
+}
+
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .hidden{
-    display: hidden;
-  }
-
-  .type{
+.type {
     font-weight: 800;
-  }
+}
 
-  #search-field{
+#search-field {
     width: 60%;
     height: 30px;
-  }
+}
 
-  #enter-button{
+#enter-button {
     width: 20%;
     height: 30px;
-  }
+}
 
-  #search-form{
+#search-form {
 
     height: 60px;
     display: flex;
@@ -64,15 +60,86 @@
     margin: auto;
     align-items: center;
 
-    background-color:#d1ded2;
-    ;
-  }
+    background-color: #d1ded2;;
+}
 
-  .low-risk{
+.low-risk {
     color: blue;
-  }
+}
 
-  .high-risk{
+.high-risk {
     color: red;
-  }
+}
+
+.date {
+    width: 50%;
+}
+
+.type {
+    width: 50%;
+}
+
+#loc-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/*inspection elements*/
+.inspection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.inspection {
+    border: solid 2px #B0D3AC;
+    background-color: #d1ded2;
+}
+
+.inspec-header {
+    border: solid 2px #B0D3AC;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-evenly;
+    padding-left: 1em;
+}
+
+.inspec-header:hover {
+    background-color: #B5E5AF;
+    cursor: pointer;
+}
+
+
+.inspec-header-element {
+    font-weight: bold;
+}
+
+.inspec-body {
+    border: solid 2px #B0D3AC;
+    display: none;
+}
+
+/*violation element styling*/
+.violation {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 60px;
+    border-bottom: solid 2px #B0D3AC;
+    padding-left: 1em;
+}
+
+.viol-code {
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+}
+
+.none {
+    padding-left: 1em;
+}
+
+
   
