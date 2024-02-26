@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  font-style: "Ubuntu",  "sans-serif";
+}
+
+ #side-bar{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #93E9BE;
+  overflow-y: auto;
+ }
+
+ #loc-details{
+  margin: 2em;
+ }
+
+ #map {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hidden{
+    display: hidden;
+  }
+
+  .type{
+    font-weight: 800;
+  }
+
+  #search-field{
+    width: 60%;
+    height: 30px;
+  }
+
+  #enter-button{
+    width: 20%;
+    height: 30px;
+  }
+
+  #search-form{
+
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+
+    background-color:#d1ded2;
+    ;
+  }
+
+  .low-risk{
+    color: blue;
+  }
+
+  .high-risk{
+    color: red;
+  }
+  
