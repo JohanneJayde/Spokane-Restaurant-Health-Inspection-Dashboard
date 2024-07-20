@@ -19,7 +19,7 @@ class DataParser:
     # 1 = Reading file entry
     def parse_file2(self):
         geolocator = Nominatim(user_agent=__name__)
-        geolocator2 = GoogleV3(user_agent=__name__, api_key="AIzaSyDM2aIF6rrgDjkOZHmGyt41Bnhueg-Fspk")
+        geolocator2 = GoogleV3(user_agent=__name__, api_key="API_KEY_HERE")
         entries = {}
         state = 0
         current_entry = -1
